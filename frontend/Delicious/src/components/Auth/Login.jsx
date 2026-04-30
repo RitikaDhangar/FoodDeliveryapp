@@ -45,6 +45,7 @@ const Login = () => {
     <>
       {alertErr?.status && (
         <Alert
+          style={{zIndex:'1000'}}
           variant="danger"
           onClose={() => setAlertErr({ msg: "", status: false })}
           dismissible
