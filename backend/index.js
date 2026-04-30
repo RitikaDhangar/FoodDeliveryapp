@@ -32,8 +32,9 @@ Expense.belongsTo(User);
 
 const startServer = async () => {
   try {
+    const PORT = process.env.PORT || 9000;
     await sequelize.sync();
-    server.listen(9000, () => {
+    server.listen(PORT, () => {
       console.log("listen to the server");
     });
   } catch (err) {
