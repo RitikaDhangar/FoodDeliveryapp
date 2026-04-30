@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 import cors from "cors";
 import sequelize from "./config/database.js";
-import User from "./models/user.js";
+import User from "./models/User.js";
 import UserRouter from "./routes/UserRouter.js";
 import DishRouter from './routes/DishRouter.js'
 import OrderRouter from './routes/OrderRouter.js'
