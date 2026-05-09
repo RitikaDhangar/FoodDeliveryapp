@@ -11,6 +11,7 @@ import ProtectedRoute from './components/ProtectedRoute.jsx'
 import { useEffect } from 'react';
 import History from './components/History.jsx';
 import DeliveryStatus from './components/DeliveryStatus.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   const token=localStorage.getItem('token');
@@ -40,6 +41,7 @@ function App() {
           </Route>
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer/>
     </>
   )
 }
