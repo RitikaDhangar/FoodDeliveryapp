@@ -247,7 +247,7 @@ const Home = () => {
             <div
                 style={{
                     position: "fixed",
-                    bottom: "0",
+                    bottom: "45px",
                     left: "0",
                     width: "100%",
                     background: "#fff",
